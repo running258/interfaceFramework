@@ -1,0 +1,12 @@
+{
+	"supply": {
+		"userName": "interfaceTest",
+		"passWord": "qwer1234",
+		"supplyName": "interfaceTest"
+    },
+    "hospital": {
+        "userName": "interfacetesthosp",
+        "passWord": "interfacetesthosp",
+        "hosptialName": "interfaceTestHosp"
+    }
+}

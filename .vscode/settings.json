@@ -1,0 +1,15 @@
+{
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "files.exclude": {
+    "__error": "Not found",
+    ".vscode": true,
+    ".pytest_cache": true
+},
+"cSpell.words": [
+    "hosptial",
+    "interfacetesthosp",
+    "name",
+    "qwer"
+]
+}
