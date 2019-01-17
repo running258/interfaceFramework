@@ -4,12 +4,15 @@
   "files.exclude": {
     "__error": "Not found",
     ".vscode": true,
-    ".pytest_cache": true
-},
-"cSpell.words": [
+    ".pytest_cache": true,
+    "interfaceFrameWork\\common\\__pycache__": true,
+    "interfaceFrameWork\\tests\\supply\\__pycache__": true,
+    "interfaceFrameWork\\__pycache__": true
+  },
+  "cSpell.words": [
     "hosptial",
     "interfacetesthosp",
     "name",
     "qwer"
-]
+  ]
 }
