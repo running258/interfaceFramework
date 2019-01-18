@@ -8,5 +8,31 @@
         "userName": "interfacetesthosp",
         "passWord": "interfacetesthosp",
         "hosptialName": "interfaceTestHosp"
+    },
+    "dbConn": {
+        "test":{
+            "host":"192.168.96.11",
+            "port":23306,
+            "username":"viewchaindev",
+            "password":"6emE2AChaS=e",
+            "supplyDB":"viewchaindb",
+            "hospDB":"cloud_hospdb"
+        },
+        "staging":{
+            "host":"192.168.96.11",
+            "port":23306,
+            "username":"viewchainstaging",
+            "password":"cr+4R!mEsWE5",
+            "supplyDB":"viewchaindb_staging",
+            "hospDB":"cloud_hospdb_staging"
+        },
+        "demo":{
+            "host":"192.168.96.11",
+            "port":23306,
+            "username":"viewchaindemo",
+            "password":"bEvuch88EDRE",
+            "supplyDB":"viewchaindb_demo",
+            "hospDB":"cloud_hospdb_demo"
+        }
     }
 }

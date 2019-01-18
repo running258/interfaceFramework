@@ -7,12 +7,25 @@
     ".pytest_cache": true,
     "interfaceFrameWork\\common\\__pycache__": true,
     "interfaceFrameWork\\tests\\supply\\__pycache__": true,
-    "interfaceFrameWork\\__pycache__": true
+    "interfaceFrameWork\\__pycache__": true,
+    "interfaceFrameWork\\tests\\supply\\.pytest_cache": true,
+    "interfaceFrameWork\\entiy\\__pycache__": true,
+    "__pycache__": true,
+    "interfaceFrameWork\\entity\\__pycache__": true
   },
   "cSpell.words": [
+    "b",
+    "cloud",
+    "edre",
+    "evuch",
+    "hospdb",
     "hosptial",
     "interfacetesthosp",
     "name",
-    "qwer"
+    "qwer",
+    "viewchaindb",
+    "viewchaindemo",
+    "viewchaindev",
+    "viewchainstaging"
   ]
 }
