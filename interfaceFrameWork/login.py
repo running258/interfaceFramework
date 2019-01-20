@@ -20,9 +20,8 @@ class Login(object):
             raise Exception("the env is INCORRECT! please check your env than try again.")
 
         self.supplyLoginPath = "/api1/auth/login"
+        self.getUserRes = "/api1/api/user/base/getUserRes"
         self.hospLoginPath = "/sys/login"
-
-        self.roleFile = "supply/roleManage.json"
 
     def supplyLogin(self, jsonFile="init.json"):
         loginInfo = jsonLoad().jsonContext(jsonFile)
@@ -33,8 +32,6 @@ class Login(object):
         authorization = json.loads(res.text)["result"]["token"]
         header = {"authorization":authorization}
         
-        roleListContext = jsonLoad().jsonContext(self.roleFile)
-        roleListPath = roleListContext["roleList"]["path"]
         params = {"_t":getTime().getTimestamp()}
-        res = requests.get(self._supplyUrl+roleListPath,headers=header,data=params)
+        res = requests.get(self._supplyUrl+self.getUserRes,headers=header,data=params)
         return authorization

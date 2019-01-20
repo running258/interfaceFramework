@@ -17,9 +17,12 @@
 		"path": "/api1/api/dict/role/list",
 		"header":{},
 		"params": {}
-	},"deleteRole": {
+	},
+	"deleteRole": {
 		"path": "/api1/api/account/role/delete",
 		"header":{},
-		"params": {}
+		"params": {
+			"rid": null
+		}
 	}
 }

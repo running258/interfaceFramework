@@ -15,9 +15,14 @@ class requestsTemp(Login):
         header["authorization"] = authorization
         params = data["params"]
         params["_t"] = getTime().getTimestamp()
+
+        # params["dataFrom"]
+
+        if "rid" in data:
+            print(data)
+
         if methods.lower() == "post":
             params = json.dumps(params)
-            print(self._supplyUrl+path)
             r = requests.post(self._supplyUrl+path, data=params,headers=header)
         elif methods.lower() == "get":
             r = requests.get(self._supplyUrl+path, data=params,headers=header)
@@ -28,5 +33,7 @@ class requestsTemp(Login):
 
         print(r.text)
 
-requestsTemp().supplyRequests("post","supply/roleManage.json","addRole")
+
+requestsTemp().supplyRequests("post","supply/roleManage.json","deleteRole")
+# requestsTemp().supplyRequests("get","supply/roleManage.json","roleList")
         
