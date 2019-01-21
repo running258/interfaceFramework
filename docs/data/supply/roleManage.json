@@ -1,6 +1,7 @@
 {
 	"addRole": {
 		"path": "/api1/api/account/role/create",
+		"method":"post",
 		"header": {
 			"content-type": "application/json"
 		},
@@ -15,14 +16,17 @@
 	},
 	"roleList": {
 		"path": "/api1/api/dict/role/list",
+		"method":"get",
 		"header":{},
 		"params": {}
 	},
 	"deleteRole": {
 		"path": "/api1/api/account/role/delete",
+		"method":"get",
 		"header":{},
-		"params": {
-			"rid": null
+		"params": {},
+		"variable":{
+			"roleName":"interfaceRole"
 		}
 	}
 }

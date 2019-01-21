@@ -7,7 +7,14 @@ class dbConn(object):
 
         self.connEnv = jsonLoad().jsonContext(jsonFile)["dbConn"][env]
 
-    def connectToSupply(self, jsonFileName):
+    def connectToSupply(self):
+
+        host = self.connEnv["host"]
+        port = self.connEnv["port"]
+        username = self.connEnv["username"]
+        password = self.connEnv["password"]
+        dbName = self.connEnv["supplyDB"]
+
         pass
 
 dbConn()

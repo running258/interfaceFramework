@@ -1,39 +1,31 @@
-import requests
-import json
-from entity.tools import jsonLoad
-from entity.tools import getTime
+import requests, json
 from login import Login
+from entity.tools import jsonLoad,getTime
 
 class requestsTemp(Login):
 
-    def supplyRequests(self, methods, jsonFile, dataNode):
+    def supplyRequests(self, jsonFile, dataNode, returnType = "json", ):
         authorization = Login().supplyLogin()
         jsonContext = jsonLoad().jsonContext(jsonFile)
         data = jsonContext[dataNode]
+        method = data["method"]
         path = data["path"]
         header = data["header"]
         header["authorization"] = authorization
         params = data["params"]
         params["_t"] = getTime().getTimestamp()
 
-        # params["dataFrom"]
-
-        if "rid" in data:
-            print(data)
-
-        if methods.lower() == "post":
+        if method.lower() == "post":
             params = json.dumps(params)
-            r = requests.post(self._supplyUrl+path, data=params,headers=header)
-        elif methods.lower() == "get":
-            r = requests.get(self._supplyUrl+path, data=params,headers=header)
-        elif methods.lower() == "put":
-            r = requests.put(self._supplyUrl+path, data=params,headers=header)
+            res = requests.post(self._supplyUrl+path, data=params,headers=header)
+        elif method.lower() == "get":
+            res = requests.get(self._supplyUrl+path, data=params,headers=header)
+        elif method.lower() == "put":
+            res = requests.put(self._supplyUrl+path, data=params,headers=header)
         else:
-            raise Exception("no requests named %s"% (methods))
+            raise Exception("no requests named %s"% (method))
 
-        print(r.text)
-
-
-requestsTemp().supplyRequests("post","supply/roleManage.json","deleteRole")
-# requestsTemp().supplyRequests("get","supply/roleManage.json","roleList")
-        
+        if returnType.lower() == "json":
+            return res.json()
+        elif returnType.lower() == "string" or returnType.lower() == "text":
+            return res.text

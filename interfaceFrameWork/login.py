@@ -1,7 +1,5 @@
-import requests
-import json
-from entity.tools import jsonLoad
-from entity.tools import getTime
+import requests, json
+from entity.tools import jsonLoad,getTime
 
 class Login(object):
 

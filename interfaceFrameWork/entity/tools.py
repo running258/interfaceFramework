@@ -11,6 +11,10 @@ class jsonLoad(object):
         with open(self.jsonPath+jsonFileName,'r') as jsonContext:
             return json.load(jsonContext)
 
+    def getVariable(self, jsonFileName, dataNode, varName):
+        with open(self.jsonPath+jsonFileName,'r') as jsonContext:
+            return json.load(jsonContext)[dataNode]["variable"][varName]
+
 class getTime(object):
 
     def getTimestamp(self):
