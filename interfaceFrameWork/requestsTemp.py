@@ -1,4 +1,9 @@
-import requests, json
+import requests, json,os,sys
+
+curPath = os.path.abspath(os.path.realpath(__file__))
+prePath = os.path.split(curPath)[0]
+sys.path.append(prePath)
+
 from login import Login
 from entity.tools import jsonLoad,getTime
 
@@ -36,4 +41,6 @@ class requestsTemp(Login):
         elif returnType.lower() == "string" or returnType.lower() == "text":
             return res.text
 
-# requestsTemp().person(d='Beijing',tesxt=123)
+    def person(self):
+        pass
+

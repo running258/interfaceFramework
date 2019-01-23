@@ -1,0 +1,38 @@
+{
+	"addNormalUser": {
+		"path": "/api1/api/account/user/create",
+		"method":"post",
+		"header": {
+			"content-type": "application/json"
+		},
+		"params": {
+			"roleIdList": [],
+			"userVo": {
+				"name": "intertest",
+				"realName": "intertest",
+				"phone": "15900021232",
+				"mail": "intertest@qwe.e",
+				"password": "qwer1234",
+				"description": "",
+				"businessType": "2"
+			},
+			"hospitalList": [],
+			"materialList": []
+		}
+	},
+	"roleUser": {
+		"path": "/api1/api/dict/role/list",
+		"method":"get",
+		"header":{},
+		"params": {}
+	},
+	"deleteUser": {
+		"path": "/api1/api/account/role/delete",
+		"method":"get",
+		"header":{},
+		"params": {},
+		"variable":{
+			"roleName":"interfaceRole"
+		}
+	}
+}

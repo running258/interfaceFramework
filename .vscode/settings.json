@@ -11,7 +11,8 @@
     "interfaceFrameWork\\tests\\supply\\.pytest_cache": true,
     "interfaceFrameWork\\entiy\\__pycache__": true,
     "__pycache__": true,
-    "interfaceFrameWork\\entity\\__pycache__": true
+    "interfaceFrameWork\\entity\\__pycache__": true,
+    "cases\\supply\\__pycache__": true
   },
   "cSpell.words": [
     "b",
