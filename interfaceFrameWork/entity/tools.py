@@ -1,6 +1,6 @@
 import os
 import json
-import time
+import time,datetime
 
 class jsonLoad(object):
 
@@ -19,3 +19,11 @@ class getTime(object):
 
     def getTimestamp(self):
         return int(time.time())*1000
+
+    def getYYYYMMDDTimestamp(self):
+        nowTime = datetime.datetime.now()
+        time_structure = datetime.datetime(nowTime.year, nowTime.month, nowTime.day, 8, 0, 0, 0)
+        return int(time.mktime(time_structure.timetuple()))*1000
+
+
+getTime().getYYYYMMDDTimestamp()

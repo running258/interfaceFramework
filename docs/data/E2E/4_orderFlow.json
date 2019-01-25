@@ -68,7 +68,7 @@
 			"orderInfo": "",
 			"status": 1,
 			"type": 1,
-			"hid": 10053,
+			"hid": "",
 			"pagination": {
 				"pageNo": 1,
 				"pageSize": 20
@@ -88,17 +88,13 @@
 			"content-type": "application/json;charset=UTF-8"
 		},
 		"params": {
-			"oid": 163717,
+			"oid": "",
 			"ver": 1,
 			"hid": 10053,
 			"sCode": "interfaceTest",
-			"orderNo": "D20190125001",
+			"orderNo": "",
 			"hName": "interfaceTestHosp"
 		},
 		"variable":{}
 	}
-
-
-
-	
 }

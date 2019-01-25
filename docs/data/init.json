@@ -2,12 +2,14 @@
 	"supply": {
 		"userName": "interfaceTest",
 		"passWord": "qwer1234",
-		"supplyName": "interfaceTest"
+        "supplyName": "interfaceTest",
+        "sid":150696
     },
     "hospital": {
         "userName": "interfacetesthosp",
         "passWord": "interfacetesthosp",
-        "hosptialName": "interfaceTestHosp"
+        "hosptialName": "interfaceTestHosp",
+        "hid":10053
     },
     "dbConn": {
         "test":{

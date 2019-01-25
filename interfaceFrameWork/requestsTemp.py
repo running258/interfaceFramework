@@ -27,6 +27,7 @@ class requestsTemp(Login):
         elif method.lower() == "get":
             res = requests.get(self._supplyUrl+path, params=params,headers=header)
         elif method.lower() == "put":
+            params = json.dumps(params)
             res = requests.put(self._supplyUrl+path, data=params,headers=header)
         else:
             raise Exception("no requests named %s"% (method))
@@ -54,6 +55,7 @@ class requestsTemp(Login):
         elif method.lower() == "get":
             res = requests.get(self._hospUrl+path, params=params,headers=header)
         elif method.lower() == "put":
+            params = json.dumps(params)
             res = requests.put(self._hospUrl+path, data=params,headers=header)
         else:
             raise Exception("no requests named %s"% (method))
