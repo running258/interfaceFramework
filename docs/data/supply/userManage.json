@@ -27,12 +27,9 @@
 		"params": {}
 	},
 	"deleteUser": {
-		"path": "/api1/api/account/role/delete",
-		"method":"get",
-		"header":{},
-		"params": {},
 		"variable":{
-			"roleName":"interfaceRole"
+			"supplyName":"interfaceTest",
+			"userName": "intertest"
 		}
 	}
 }

@@ -12,7 +12,8 @@
     "interfaceFrameWork\\entiy\\__pycache__": true,
     "__pycache__": true,
     "interfaceFrameWork\\entity\\__pycache__": true,
-    "cases\\supply\\__pycache__": true
+    "cases\\supply\\__pycache__": true,
+    "cases\\E2E\\__pycache__": true
   },
   "cSpell.words": [
     "b",

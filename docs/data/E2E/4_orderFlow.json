@@ -1,0 +1,104 @@
+{
+	"hospAddOrder": {
+		"path": "/trading/order/saveOrUpdate",
+		"method":"post",
+		"header": {
+			"content-type": "application/json;charset=UTF-8"
+		},
+		"params": {
+			"orderNo": "",
+			"venName": "interfaceTest",
+			"venCode": "interfaceTest",
+			"type": 1,   
+			"orderDate": "",
+			"departmentName": "",
+			"address": "",
+			"totalMoney": 1000,
+			"purchaser": "",
+			"remark": "",
+			"details": [{
+				"materialCode": "interfaceMaterial",
+				"materialName": "interfaceMaterial",
+				"materialSpec": "",
+				"materialUnit": "",
+				"price": 100,
+				"amount": "10",
+				"totalMoney": 1000,
+				"estimationDate": null,
+				"remark": ""
+			}],
+			"id": null
+		},
+		"variable":{}
+	},
+	"hospGetSendingOrder": {
+		"path": "/trading/order/list",
+		"method":"post",
+		"header": {
+			"content-type": "application/json;charset=UTF-8"
+		},
+		"params": {
+			"orderNo": "",
+			"venName": "interfaceTest",
+			"page": 1,
+			"limit": 20,
+			"type": 1,
+			"orderStatus": 0
+		},
+		"variable":{}
+	},
+	"hospSendOrder": {
+		"path": "/trading/order/noticeSupplier",
+		"method":"post",
+		"header": {
+			"content-type": "application/json;charset=UTF-8"
+		},
+		"params": {
+			"id": ""
+		},
+		"variable":{}
+	},
+	"supplyGetNeedConfirmOrder": {
+		"path": "/api1/api/trading/order/list",
+		"method":"POST",
+		"header": {
+			"content-type": "application/json;charset=UTF-8"
+		},
+		"params": {
+			"orderInfo": "",
+			"status": 1,
+			"type": 1,
+			"hid": 10053,
+			"pagination": {
+				"pageNo": 1,
+				"pageSize": 20
+			},
+			"cppFlag": 0,
+			"urgency": 0,
+			"mNameOrCode": "",
+			"purcDeptName": "",
+			"reqDeptName": ""
+		},
+		"variable":{}
+	},
+	"supplyConfirmOrder": {
+		"path": "/api1/api/trading/order/approve",
+		"method":"PUT",
+		"header": {
+			"content-type": "application/json;charset=UTF-8"
+		},
+		"params": {
+			"oid": 163717,
+			"ver": 1,
+			"hid": 10053,
+			"sCode": "interfaceTest",
+			"orderNo": "D20190125001",
+			"hName": "interfaceTestHosp"
+		},
+		"variable":{}
+	}
+
+
+
+	
+}

@@ -1,0 +1,20 @@
+{
+	"hospAddBindCode": {
+		"path": "/dict/vendor/save",
+		"method":"post",
+		"header": {
+			"content-type": "application/json;charset=UTF-8"
+		},
+		"params": {
+			"venCode": "interfaceTest",
+			"venName": "interfaceTest",
+			"remark": ""
+		}
+	},
+	"supplyBindHosp":{
+
+	},
+	"hospApply":{
+		
+	}
+}

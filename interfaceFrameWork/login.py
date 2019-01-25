@@ -33,3 +33,12 @@ class Login(object):
         params = {"_t":getTime().getTimestamp()}
         res = requests.get(self._supplyUrl+self.getUserRes,headers=header,data=params)
         return authorization
+
+    def hospLogin(self, jsonFile="init.json"):
+        loginInfo = jsonLoad().jsonContext(jsonFile)
+        userName = loginInfo["hospital"]["userName"]
+        passWord = loginInfo["hospital"]["passWord"]
+        loginParams = {"username":userName,"password":passWord,"captcha":"","checked":False}
+        res = requests.post(self._hospUrl+self.hospLoginPath,data=loginParams)
+        authorization = json.loads(res.text)["Authorization"]
+        return authorization
