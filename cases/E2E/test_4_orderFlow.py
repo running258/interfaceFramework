@@ -23,17 +23,17 @@ def test_hospSendOrder():
     res = requestsTemp().hospRequests("E2E/4_orderFlow.json","hospSendOrder",extraParams=extraParams)
     assert res["code"] == 200
 
-def test_supplyConfrimOrder():
-    extraParams["hid"] = hid
-    needConfirmOrderList = requestsTemp().supplyRequests("E2E/4_orderFlow.json","supplyGetNeedConfirmOrder",extraParams=extraParams)
-    orderId = needConfirmOrderList["result"]["data"][0]["id"]
-    orderNo = needConfirmOrderList["result"]["data"][0]["num"]
-    extraParams["orderNo"] = orderNo
-    extraParams["oid"] = orderId
-    needConfirmOrderList = requestsTemp().supplyRequests("E2E/4_orderFlow.json","supplyConfirmOrder",extraParams=extraParams)
-    assert res["status"] == 1
+# def test_supplyConfrimOrder():
+#     extraParams["hid"] = hid
+#     needConfirmOrderList = requestsTemp().supplyRequests("E2E/4_orderFlow.json","supplyGetNeedConfirmOrder",extraParams=extraParams)
+#     orderId = needConfirmOrderList["result"]["data"][0]["id"]
+#     orderNo = needConfirmOrderList["result"]["data"][0]["num"]
+#     extraParams["orderNo"] = orderNo
+#     extraParams["oid"] = orderId
+#     needConfirmOrderList = requestsTemp().supplyRequests("E2E/4_orderFlow.json","supplyConfirmOrder",extraParams=extraParams)
+#     assert needConfirmOrderList["status"] == 1
 
 
 
 
-test_supplyConfrimOrder()
+# test_supplyConfrimOrder()
