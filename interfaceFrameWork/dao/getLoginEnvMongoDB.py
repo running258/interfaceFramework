@@ -1,4 +1,4 @@
-from getMongo import mongoConn
+from interfaceFrameWork.dao.getMongo import mongoConn
 
 class getLoginEnvMongoDB(mongoConn):
 
@@ -8,6 +8,3 @@ class getLoginEnvMongoDB(mongoConn):
     def getLoginEnvCollection(self,sys,env="staging"):
         result = self.db.loginEnv.find_one({"sys":sys,"env":env})
         return result
-
-print(getLoginEnvMongoDB().getLoginEnvCollection("supply"))
-
