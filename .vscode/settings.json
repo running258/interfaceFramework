@@ -15,7 +15,8 @@
     "cases\\supply\\__pycache__": true,
     "cases\\E2E\\__pycache__": true,
     "cases\\.pytest_cache": true,
-    "cases\\E2E\\.pytest_cache": true
+    "cases\\E2E\\.pytest_cache": true,
+    "interfaceFrameWork\\dao\\__pycache__": true
   },
   "cSpell.words": [
     "b",
@@ -26,6 +27,7 @@
     "hosptial",
     "interfacetesthosp",
     "name",
+    "pymongo",
     "qwer",
     "viewchaindb",
     "viewchaindemo",

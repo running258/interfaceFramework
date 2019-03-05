@@ -1,0 +1,1 @@
+{"_id":{"$oid":"5c7e21b2a76ccc33d0dde741"},"interName":"addRole","path":"/api1/api/account/role/create","method":"post","header":{"content-type":"application/json"},"params":{"resIdList":[0,3,6,12,63,15,18,24,60,27,21,30,33,66,62,69,161,164,167,170,173,72,75,102],"roleVo":{"name":"interfaceRole","description":"","builtIn":2}}}
